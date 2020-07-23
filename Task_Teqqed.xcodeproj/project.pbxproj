@@ -12,7 +12,6 @@
 		8E0AAA9824CA245600B5F8FF /* PostDetailsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AAA9724CA245600B5F8FF /* PostDetailsTableView.swift */; };
 		8E0AAA9A24CA251400B5F8FF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AAA9924CA251400B5F8FF /* UIViewController.swift */; };
 		8EDDAB1324C7557500DBFB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDAB1224C7557500DBFB4D /* AppDelegate.swift */; };
-		8EDDAB1524C7557500DBFB4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDAB1424C7557500DBFB4D /* SceneDelegate.swift */; };
 		8EDDAB1724C7557500DBFB4D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDAB1624C7557500DBFB4D /* MainVC.swift */; };
 		8EDDAB1A24C7557500DBFB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDAB1824C7557500DBFB4D /* Main.storyboard */; };
 		8EDDAB1D24C7557500DBFB4D /* Task_Teqqed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDAB1B24C7557500DBFB4D /* Task_Teqqed.xcdatamodeld */; };
@@ -36,7 +35,6 @@
 		8E0AAA9924CA251400B5F8FF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		8EDDAB0F24C7557500DBFB4D /* Task_Teqqed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_Teqqed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDDAB1224C7557500DBFB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EDDAB1424C7557500DBFB4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8EDDAB1624C7557500DBFB4D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8EDDAB1924C7557500DBFB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EDDAB1C24C7557500DBFB4D /* Task_Teqqed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_Teqqed.xcdatamodel; sourceTree = "<group>"; };
@@ -74,6 +72,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8E0AAA9B24CA28A700B5F8FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDAB1624C7557500DBFB4D /* MainVC.swift */,
+				8EDDAB3E24C9F7CB00DBFB4D /* PostdetailsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8E0AAA9C24CA28F900B5F8FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDAB1224C7557500DBFB4D /* AppDelegate.swift */,
+				8EDDAB1824C7557500DBFB4D /* Main.storyboard */,
+				8EDDAB1E24C7557B00DBFB4D /* Assets.xcassets */,
+				8EDDAB2024C7557B00DBFB4D /* LaunchScreen.storyboard */,
+				8EDDAB1B24C7557500DBFB4D /* Task_Teqqed.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8EDDAB0624C7557500DBFB4D = {
 			isa = PBXGroup;
 			children = (
@@ -93,20 +112,14 @@
 		8EDDAB1124C7557500DBFB4D /* Task_Teqqed */ = {
 			isa = PBXGroup;
 			children = (
-				8E0AAA9424CA243300B5F8FF /* Views */,
-				8EDDAB3B24C8A27D00DBFB4D /* ViewModel */,
-				8EDDAB3824C78E6700DBFB4D /* Utils */,
+				8EDDAB2324C7557B00DBFB4D /* Info.plist */,
 				8EDDAB2924C756B300DBFB4D /* Service */,
 				8EDDAB2F24C7753500DBFB4D /* Models */,
-				8EDDAB1224C7557500DBFB4D /* AppDelegate.swift */,
-				8EDDAB1424C7557500DBFB4D /* SceneDelegate.swift */,
-				8EDDAB1624C7557500DBFB4D /* MainVC.swift */,
-				8EDDAB3E24C9F7CB00DBFB4D /* PostdetailsVC.swift */,
-				8EDDAB1824C7557500DBFB4D /* Main.storyboard */,
-				8EDDAB1E24C7557B00DBFB4D /* Assets.xcassets */,
-				8EDDAB2024C7557B00DBFB4D /* LaunchScreen.storyboard */,
-				8EDDAB2324C7557B00DBFB4D /* Info.plist */,
-				8EDDAB1B24C7557500DBFB4D /* Task_Teqqed.xcdatamodeld */,
+				8EDDAB3B24C8A27D00DBFB4D /* ViewModel */,
+				8E0AAA9B24CA28A700B5F8FF /* Controllers */,
+				8E0AAA9424CA243300B5F8FF /* Views */,
+				8EDDAB3824C78E6700DBFB4D /* Utils */,
+				8E0AAA9C24CA28F900B5F8FF /* Resources */,
 			);
 			path = Task_Teqqed;
 			sourceTree = "<group>";
@@ -236,7 +249,6 @@
 				8EDDAB3324C78D5900DBFB4D /* Identifiable.swift in Sources */,
 				8EDDAB3F24C9F7CB00DBFB4D /* PostdetailsVC.swift in Sources */,
 				8EDDAB3124C7754200DBFB4D /* Post.swift in Sources */,
-				8EDDAB1524C7557500DBFB4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
